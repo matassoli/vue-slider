@@ -11,27 +11,27 @@
 
 <body>
 
-
   <div id="app" class="container">
+
     <div class="slider__wrapper">
       <div class="slider">
         <div class="slider--prev">
           <i @click="prevImg" class="fas fa-angle-left"></i>
         </div>
+
         <div class="slider__img">
           <img :src="images[imageIndex]">
-
           <div class="slider__bullets">
             <i class="fas fa-circle" v-for="(image, index) in images" :class="imageIndex == index ? 'active' : '' " @click="imageIndex= index"></i>
           </div>
         </div>
+
         <div class=" slider--next">
           <i @click="nextImg" class="fas fa-angle-right"></i>
         </div>
-
-
       </div>
     </div>
+
   </div>
 
 </body>
