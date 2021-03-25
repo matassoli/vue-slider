@@ -18,14 +18,17 @@
         <div class="slider--prev">
           <i @click="prevImg" class="fas fa-angle-left"></i>
         </div>
-
         <div class="slider__img">
           <img :src="images[imageIndex]">
-        </div>
 
-        <div class="slider--next">
+          <div class="slider__bullets">
+            <i class="fas fa-circle" v-for="(image, index) in images" :class="imageIndex == index ? 'active' : '' " @click="imageIndex= index"></i>
+          </div>
+        </div>
+        <div class=" slider--next">
           <i @click="nextImg" class="fas fa-angle-right"></i>
         </div>
+
 
       </div>
     </div>
@@ -35,22 +38,3 @@
 <script src="js/myscript.js" charset="utf-8"></script>
 
 </html>
-
-
-
-
-
-<!-- <div class="images">
-
-  <img src="https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg" alt="">
-  <img src="https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg" alt="">
-  <img class="last" src="https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg" alt="">
-</div> -->
-
-
-<!-- <div class="nav">
-  <i class="fas fa-circle active first"></i>
-  <i class="fas fa-circle"></i>
-  <i class="fas fa-circle"></i>
-  <i class="fas fa-circle last"></i>
-</div> -->

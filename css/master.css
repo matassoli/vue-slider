@@ -31,3 +31,23 @@
   object-position: center;
   border-radius: 100%;
 }
+
+.slider__img {
+  position: relative;
+}
+
+.slider__bullets {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__bullets i {
+  font-size: 15px;
+  padding: 0 5px
+}
+
+.active {
+  text-shadow: 0 0 10px #FFF;
+}

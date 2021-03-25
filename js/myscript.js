@@ -7,7 +7,8 @@ var app = new Vue({
       "https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg",
       "https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg",
     ],
-    imageIndex: 0
+    imageIndex: 0,
+    color: true,
   },
   methods: {
     nextImg: function() {
@@ -21,6 +22,6 @@ var app = new Vue({
       if (this.imageIndex < 0) {
         this.imageIndex = this.images.length - 1;
       }
-    }
+    },
   }
 });
