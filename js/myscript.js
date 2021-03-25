@@ -12,9 +12,15 @@ var app = new Vue({
   methods: {
     nextImg: function() {
       this.imageIndex++;
+      if (this.imageIndex == this.images.length) {
+        this.imageIndex = 0;
+      }
     },
     prevImg: function() {
       this.imageIndex--;
+      if (this.imageIndex < 0) {
+        this.imageIndex = this.images.length - 1;
+      }
     }
   }
 });
