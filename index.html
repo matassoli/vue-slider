@@ -16,15 +16,15 @@
     <div class="slider__wrapper">
       <div class="slider">
         <div class="slider--prev">
-          <i class="fas fa-angle-left"></i>
+          <i @click="prevImg" class="fas fa-angle-left"></i>
         </div>
 
         <div class="slider__img">
-          <img src="https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?cs=srgb&dl=clouds-country-daylight-371633.jpg&fm=jpg" alt="">
+          <img :src="images[imageIndex]">
         </div>
 
         <div class="slider--next">
-          <i class="fas fa-angle-right"></i>
+          <i @click="nextImg" class="fas fa-angle-right"></i>
         </div>
 
       </div>
